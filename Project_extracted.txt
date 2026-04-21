@@ -1,0 +1,62 @@
+
+
+--- PAGE 1 ---
+ 
+Team Project 
+Software Engineering 
+ 
+Background 
+Your software development start-up has been awarded a contract to design and 
+implement a prototype operational information system for First Quantum 
+Minerals. The objective of this project is to simulate a real-world enterprise 
+software development process, from requirements analysis through system 
+implementation and documentation. 
+Task 
+Working in groups, you are required to design, develop, and document an 
+operational software system that supports selected business processes of a large 
+mining organization. 
+The system should be developed using an appropriate programming platform 
+such as Python, Java, or C#, and must demonstrate sound application of 
+software engineering principles. 
+Your project must include: 
+• Requirement’s analysis and system specification 
+• System design using UML 
+• Implementation of core system features 
+• Error handling and exception management 
+• System testing and validation 
+• User and technical documentation 
+Deliverables 
+1. Operational Software System 
+o A functional prototype implementing key system features 
+o Developed using Python, Java, or C# (or another approved 
+platform) 
+
+
+--- PAGE 2 ---
+2. Technical and User Documentation Manual 
+o Minimum length: 50 pages 
+o Format: Formal software manual 
+o Must include: 
+▪ System overview and objectives 
+▪ Requirement’s specification 
+▪ Architecture and design decisions 
+▪ UML diagrams and explanations 
+▪ Error handling and troubleshooting guide 
+▪ Installation and user instructions 
+▪ Testing and evaluation 
+o Referencing style: APA 
+3. UML Design Artefacts 
+A minimum of four (4) UML diagrams, for example: 
+o Use Case Diagram 
+o Class Diagram 
+o Sequence Diagram 
+o Deployment or Component Diagram 
+ 
+Instructions: 
+➢ Assignments submitted after the first 24 hours deadline will have 5% 
+deduction. 
+➢ Assignments submitted after the 2nd 24 hours will be an additional 5%.  
+➢ Third 24hours a further 5% deduction.  
+➢ Should your assignment submission go beyond Day 3, 0% will be 
+awarded for the assignment, but the assignment must still be submitted in 
+order to pass the course. 

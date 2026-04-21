@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "npx http-server . -p 5500 -c-1",
+    "start:py": "python -m http.server 5500"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.0"
+  }
+}

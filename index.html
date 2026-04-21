@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Quantum Minerals | Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            headline: ["Sora", "ui-sans-serif", "system-ui"],
+            body: ["IBM Plex Sans", "ui-sans-serif", "system-ui"]
+          },
+          colors: {
+            quarry: {
+              50: "#f6f7f8",
+              100: "#e7eaed",
+              300: "#b6c0ca",
+              500: "#5f7386",
+              700: "#2e4052",
+              900: "#17212b"
+            },
+            copper: {
+              300: "#f5bc8d",
+              500: "#e08036",
+              700: "#9d4f17"
+            }
+          },
+          keyframes: {
+            rise: {
+              "0%": { opacity: "0", transform: "translateY(18px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" }
+            }
+          },
+          animation: {
+            rise: "rise 0.45s ease-out forwards"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="h-full bg-quarry-50 font-body text-quarry-900 dark:bg-quarry-900 dark:text-white">
+  <div class="relative flex min-h-full items-center justify-center overflow-hidden px-4 py-10 sm:px-8">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(224,128,54,0.22),transparent_35%),radial-gradient(circle_at_85%_85%,rgba(46,64,82,0.35),transparent_40%),linear-gradient(140deg,#f6f7f8_0%,#e7eaed_100%)] dark:bg-[radial-gradient(circle_at_15%_20%,rgba(224,128,54,0.18),transparent_35%),radial-gradient(circle_at_85%_85%,rgba(95,115,134,0.35),transparent_40%),linear-gradient(140deg,#17212b_0%,#243243_100%)]"></div>
+
+    <main class="relative z-10 grid w-full max-w-5xl animate-rise gap-6 overflow-hidden rounded-3xl border border-white/60 bg-white/80 shadow-2xl backdrop-blur-lg dark:border-white/10 dark:bg-white/5 lg:grid-cols-2">
+      <section class="relative overflow-hidden p-8 sm:p-10 lg:p-12">
+        <div class="absolute -left-10 top-8 h-44 w-44 rounded-full bg-copper-300/25 blur-3xl"></div>
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-quarry-500 dark:text-quarry-300">First Quantum Minerals</p>
+        <h1 class="mt-4 font-headline text-3xl leading-tight sm:text-4xl">Mining Inventory Management System</h1>
+        <div class="mt-8 space-y-3 rounded-2xl border border-quarry-100 bg-quarry-50/70 p-4 text-sm dark:border-white/10 dark:bg-white/5">
+          <p class="font-semibold text-quarry-700 dark:text-quarry-100">Account Access</p>
+          <p>Use your email and password to sign in.</p>
+          <p>Choose Worker or Admin when logging in and when creating an account.</p>
+        </div>
+      </section>
+
+      <section class="p-8 sm:p-10 lg:p-12">
+        <div class="mb-6 flex items-center justify-between">
+          <h2 id="authTitle" class="font-headline text-2xl">Login</h2>
+          <button id="themeToggle" type="button" class="rounded-xl border border-quarry-200 bg-white px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-quarry-700 transition hover:border-quarry-300 dark:border-white/15 dark:bg-white/5 dark:text-white">
+            Theme
+          </button>
+        </div>
+
+        <form id="loginForm" class="space-y-4" novalidate>
+          <label class="block">
+            <span class="mb-2 block text-sm font-medium text-quarry-700 dark:text-quarry-200">Email Or Username</span>
+            <input id="email" type="text" autocomplete="username" class="w-full rounded-2xl border border-quarry-200 bg-white px-4 py-3 text-quarry-900 outline-none transition focus:border-copper-500 focus:ring-2 focus:ring-copper-300/50 dark:border-white/15 dark:bg-white/5 dark:text-white" placeholder="Enter email or username" required />
+          </label>
+
+          <label class="block">
+            <span class="mb-2 block text-sm font-medium text-quarry-700 dark:text-quarry-200">Password</span>
+            <input id="password" type="password" autocomplete="current-password" class="w-full rounded-2xl border border-quarry-200 bg-white px-4 py-3 text-quarry-900 outline-none transition focus:border-copper-500 focus:ring-2 focus:ring-copper-300/50 dark:border-white/15 dark:bg-white/5 dark:text-white" placeholder="Enter password" required />
+          </label>
+
+          <label class="block">
+            <span class="mb-2 block text-sm font-medium text-quarry-700 dark:text-quarry-200">Role</span>
+            <select id="role" class="w-full rounded-2xl border border-quarry-200 bg-white px-4 py-3 text-quarry-900 outline-none transition focus:border-copper-500 focus:ring-2 focus:ring-copper-300/50 dark:border-white/15 dark:bg-white/5 dark:text-white" required>
+              <option value="worker">Worker</option>
+              <option value="admin">Admin</option>
+            </select>
+          </label>
+
+          <button id="submitBtn" type="submit" class="w-full rounded-2xl bg-quarry-900 px-5 py-3 font-semibold text-white transition hover:bg-quarry-700 dark:bg-copper-500 dark:hover:bg-copper-700">
+            Login
+          </button>
+
+          <button id="modeToggle" type="button" class="w-full rounded-2xl border border-quarry-200 bg-white px-5 py-3 font-semibold text-quarry-700 transition hover:border-quarry-300 dark:border-white/15 dark:bg-white/5 dark:text-white">
+            Create Account
+          </button>
+
+          <p id="loginMessage" class="hidden rounded-xl px-3 py-2 text-sm"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    (function () {
+      const messageEl = document.getElementById("loginMessage");
+      const themeToggle = document.getElementById("themeToggle");
+      const authTitle = document.getElementById("authTitle");
+      const submitBtn = document.getElementById("submitBtn");
+      const modeToggle = document.getElementById("modeToggle");
+
+      let mode = "login";
+
+      function setMessage(type, text) {
+        messageEl.className = "rounded-xl px-3 py-2 text-sm";
+        if (!text) {
+          messageEl.classList.add("hidden");
+          messageEl.textContent = "";
+          return;
+        }
+
+        if (type === "error") {
+          messageEl.classList.add("bg-red-50", "text-red-700", "dark:bg-red-900/30", "dark:text-red-100");
+        } else {
+          messageEl.classList.add("bg-emerald-50", "text-emerald-700", "dark:bg-emerald-900/30", "dark:text-emerald-100");
+        }
+        messageEl.textContent = text;
+      }
+
+      function updateMode() {
+        if (mode === "signup") {
+          authTitle.textContent = "Create Account";
+          submitBtn.textContent = "Create Account";
+          modeToggle.textContent = "Back To Login";
+          return;
+        }
+
+        authTitle.textContent = "Login";
+        submitBtn.textContent = "Login";
+        modeToggle.textContent = "Create Account";
+      }
+
+      const existingSession = window.InventoryAuth.getSession();
+      if (existingSession) {
+        window.location.href = window.InventoryAuth.getLandingPage(existingSession.role);
+      }
+
+      themeToggle.addEventListener("click", function () {
+        const nextTheme = window.InventoryAuth.toggleTheme();
+        themeToggle.textContent = nextTheme === "dark" ? "Light" : "Dark";
+      });
+
+      modeToggle.addEventListener("click", function () {
+        mode = mode === "login" ? "signup" : "login";
+        setMessage("", "");
+        updateMode();
+      });
+
+      document.getElementById("loginForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
+        setMessage("", "");
+
+        const email = document.getElementById("email").value.trim().toLowerCase();
+        const password = document.getElementById("password").value.trim();
+        const role = document.getElementById("role").value;
+
+        try {
+          if (mode === "signup") {
+            const signupResult = await window.InventoryAuth.signUpWithEmail(email, password, role);
+
+            if (signupResult.requiresEmailConfirmation && !signupResult.session) {
+              setMessage("success", "Account created. Confirm your email, then login.");
+              mode = "login";
+              updateMode();
+              return;
+            }
+
+            if (signupResult.usedLocalFallback) {
+              setMessage("success", "Supabase email rate limit reached. Account created in local mode. Redirecting...");
+              window.location.href = window.InventoryAuth.getLandingPage(signupResult.session.role);
+              return;
+            }
+
+            if (signupResult.requiresEmailConfirmation) {
+              setMessage("success", "Account created. Email confirmation is pending. Redirecting...");
+            } else {
+              setMessage("success", "Account created. Redirecting...");
+            }
+            window.location.href = window.InventoryAuth.getLandingPage(signupResult.session.role);
+            return;
+          }
+
+          const session = await window.InventoryAuth.loginUser(email, password, role);
+          setMessage("success", "Login successful. Redirecting...");
+          window.location.href = window.InventoryAuth.getLandingPage(session.role);
+        } catch (error) {
+          setMessage("error", error.message);
+        }
+      });
+
+      updateMode();
+    })();
+  </script>
+</body>
+</html>
